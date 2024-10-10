@@ -7,7 +7,7 @@ import LanguageSwitcher from "./LanguagesMenu";
 
 const TopBar = ({ language }) => {
   return (
-    <div className="flex w-full justify-between items-center py-4 px-8 text-gray-300">
+    <div className="flex w-full justify-between items-center py-4 px-8 text-gray-300 ">
       <Link href="/">
         <Image src="/icons/logo.svg" priority width={35} height={35} alt={`${companyName} logo`} />
       </Link>
