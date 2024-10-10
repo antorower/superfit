@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1757.26 590.52">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .03em;
+      }
+
+      .cls-2 {
+        font-family: Cleanvertising-Black, Cleanvertising;
+        font-size: 250px;
+        font-weight: 800;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #ede825;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke-width: 6px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #ede825;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        fill: #000;
+        stroke-width: 20px;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <circle class="cls-5" cx="295.26" cy="295.26" r="285.26"/>
+    <g>
+      <path class="cls-3" d="M129.41,233.79c-12.38,0-22.44,10.05-22.44,22.44v78.08c0,12.38,10.05,22.44,22.44,22.44s22.44-10.05,22.44-22.44v-78.08c0-12.38-10.05-22.44-22.44-22.44Z"/>
+      <path class="cls-3" d="M416.63,208.88c-12.38,0-22.44,10.05-22.44,22.44v45.99h-182.18v-45.99c0-12.38-10.05-22.44-22.44-22.44s-22.44,10.05-22.44,22.44v127.88c0,12.38,10.05,22.44,22.44,22.44s22.44-10.05,22.44-22.44v-45.99h182.18v45.99c0,12.38,10.05,22.44,22.44,22.44s22.44-10.05,22.44-22.44v-127.88c0-12.38-10.05-22.44-22.44-22.44Z"/>
+      <path class="cls-3" d="M476.76,233.79c-12.38,0-22.44,10.05-22.44,22.44v78.08c0,12.38,10.05,22.44,22.44,22.44s22.44-10.05,22.44-22.44v-78.08c0-12.38-10.05-22.44-22.44-22.44Z"/>
+    </g>
+    <circle class="cls-4" cx="295.26" cy="295.26" r="263.54"/>
+    <text class="cls-2" transform="translate(721.14 251.47)"><tspan x="0" y="0">Supe</tspan><tspan class="cls-1" x="577.24" y="0">r</tspan><tspan x="684.49" y="0">fit </tspan><tspan class="cls-6" x="0" y="250">S</tspan><tspan x="138.75" y="250">tudio</tspan></text>
+  </g>
+</svg>
