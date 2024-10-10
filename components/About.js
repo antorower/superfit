@@ -5,7 +5,7 @@ import { email } from "@/library/Translations";
 
 const About = ({ language }) => {
   return (
-    <div className="flex flex-col rounded-lg bg-black bg-opacity-90 border border-gray-800 p-3 gap-4">
+    <div className="flex font-geologica flex-col rounded-lg bg-black bg-opacity-90 border border-gray-800 p-3 gap-4">
       <div className="font-medium flex gap-2 items-center">
         <Image src="/icons/team.svg" width={15} height={15} />
         <div className="text-white">{profile.about.title[language]}</div>

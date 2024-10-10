@@ -5,7 +5,7 @@ import { telephone } from "@/library/Translations";
 
 const Vision = ({ language }) => {
   return (
-    <div className="flex flex-col rounded-lg bg-black bg-opacity-90 p-3 border border-gray-800 gap-4">
+    <div className="flex flex-col rounded-lg bg-black bg-opacity-90 p-3 border border-gray-800 gap-4 font-geologica">
       <div className="font-medium flex gap-2 items-center">
         <Image src="/icons/eye.svg" width={15} height={15} />
         <div className="text-white">{profile.vision.title[language]}</div>

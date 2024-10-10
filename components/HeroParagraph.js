@@ -2,26 +2,49 @@ import Link from "next/link";
 import { homePageText } from "@/library/Translations";
 import { defaultLanguage } from "@/library/Translations";
 import { telephone } from "@/library/Translations";
+import ShareButtonsHorizontal from "./ShareButtonsHorizontal";
+import Image from "next/image";
+import Enlarger from "./Enlarger";
+import CalendlyWidget from "./CalendlyWidget";
 
 const HeroParagraph = ({ language }) => {
-  const { titleLeft, titleMiddle, titleRight, subtitle, callToAction1, callToAction2 } = homePageText[language] || homePageText[defaultLanguage];
+  const { titleLeft, titleMiddle, titleRight, firstButton, secondButton } = homePageText[language] || homePageText[defaultLanguage];
 
   return (
-    <div className="text-foreground w-full flex flex-col lg:gap-3">
-      <blockquote className="text-center text-4xl sm:text-7xl font-extrabold leading-tight select-none">
+    <div className="lg:max-w-[65%] xl:max-w-[50%] p-20 lg:p-0 lg:ml-[8vw] justify-self-start text-white w-full flex flex-col gap-6">
+      <ShareButtonsHorizontal />
+      <blockquote className="text-center lg:text-left text-4xl sm:text-7xl font-extrabold leading-tight select-none">
         {titleLeft} <span className="text-primary animate-pulse">{titleMiddle}</span> {titleRight}
       </blockquote>
-      <p className="text-center m-auto text-xl w-full sm:w-[90%] lg:text-2xl text-foregroundDark select-none">{subtitle}</p>
-      <div className="flex flex-wrap justify-center gap-4 mt-4 text-xl">
-        <a href={`tel:${telephone}`} className="px-6 py-3 border border-primary bg-primary text-textDark font-bold rounded hover:bg-backgroundDark hover:text-primary  hover:border-primary flex items-center gap-2">
-          <div>{callToAction1}</div>
-        </a>
-        <Link href="/" className="px-6 py-3 border text-primary border-primary font-bold rounded bg-backgroundDark">
-          {callToAction2}
-        </Link>
+      <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-xl">
+        <Enlarger>
+          <a href={`tel:${telephone}`} aria-label={firstButton} className="px-6 py-3 border-4 h-full border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
+            <div>
+              <Image src="/icons/call.svg" width={22} height={22} alt="" />
+            </div>
+          </a>
+        </Enlarger>
+        <CalendlyWidget />
       </div>
     </div>
   );
 };
 
 export default HeroParagraph;
+/*
+<Enlarger>
+          <Link href="/" className="px-6 py-3 border-4 h-full border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
+            <div>
+              <Image src="/icons/eshop.svg" width={25} height={25} alt="" />
+            </div>
+          </Link>
+        </Enlarger>
+       <Enlarger>
+          <Link href="/" className="px-6 py-3 border-4 h-full border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
+            <div>
+              <Image src="/icons/dashboard.svg" width={22} height={22} alt="" />
+            </div>
+            <div className="font-semibold text-base">{secondButton}</div>
+          </Link>
+        </Enlarger>
+        */

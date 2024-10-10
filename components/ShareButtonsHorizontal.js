@@ -26,7 +26,7 @@ const ShareButtonsHorizontal = () => {
   };
 
   return (
-    <motion.div className="flex justify-center gap-4" variants={containerVariants} initial="hidden" animate="visible">
+    <motion.div className="flex justify-center lg:justify-start gap-4" variants={containerVariants} initial="hidden" animate="visible">
       {/* Facebook Share */}
       <motion.div whileHover={{ scale: 1.1, rotate: "360deg", transition: { duration: 0.3 } }}>
         <FacebookShareButton url={shareUrl} quote={title} aria-label={`Share ${companyName} on Facebook`}>

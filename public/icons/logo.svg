@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590.52 590.52">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 615.52 615.52">
   <defs>
     <style>
       .cls-1 {
-        fill: none;
-        stroke-width: 6px;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #ede825;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-3 {
-        fill: #ede825;
-        stroke-width: 0px;
+        fill: #fff200;
+        font-family: Devator-BoldExpanded, Devator;
+        font-size: 450.18px;
+        font-weight: 700;
       }
 
       .cls-2 {
         fill: #000;
-        stroke-width: 20px;
+        stroke: #ede825;
+        stroke-miterlimit: 10;
+        stroke-width: 45px;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
-    <circle class="cls-2" cx="295.26" cy="295.26" r="285.26"/>
-    <g>
-      <path class="cls-3" d="M129.41,233.79c-12.38,0-22.44,10.05-22.44,22.44v78.08c0,12.38,10.05,22.44,22.44,22.44s22.44-10.05,22.44-22.44v-78.08c0-12.38-10.05-22.44-22.44-22.44Z"/>
-      <path class="cls-3" d="M416.63,208.88c-12.38,0-22.44,10.05-22.44,22.44v45.99h-182.18v-45.99c0-12.38-10.05-22.44-22.44-22.44s-22.44,10.05-22.44,22.44v127.88c0,12.38,10.05,22.44,22.44,22.44s22.44-10.05,22.44-22.44v-45.99h182.18v45.99c0,12.38,10.05,22.44,22.44,22.44s22.44-10.05,22.44-22.44v-127.88c0-12.38-10.05-22.44-22.44-22.44Z"/>
-      <path class="cls-3" d="M476.76,233.79c-12.38,0-22.44,10.05-22.44,22.44v78.08c0,12.38,10.05,22.44,22.44,22.44s22.44-10.05,22.44-22.44v-78.08c0-12.38-10.05-22.44-22.44-22.44Z"/>
-    </g>
-    <circle class="cls-1" cx="295.26" cy="295.26" r="263.54"/>
+    <circle class="cls-2" cx="307.76" cy="307.76" r="285.26"/>
+    <text class="cls-1" transform="translate(159.92 469.98)"><tspan x="0" y="0">s</tspan></text>
   </g>
 </svg>

@@ -74,24 +74,6 @@ export const primaryMenu = [
   },
   {
     name: {
-      el: "Ωράριο",
-      en: "Business Hours",
-    },
-    alt: {
-      el: `Ωράριο - ${companyName}`,
-      en: `Business Hours - ${companyName}`,
-    },
-    href: "/schedule",
-    icon: "/icons/calendar.svg",
-    image: "/.webp",
-    iconHover: "/icons/calendar-yellow.svg",
-    size: 34,
-    phone: true,
-    tablet: true,
-    pc: true,
-  },
-  {
-    name: {
       el: "Χάρτης",
       en: "Map",
     },
@@ -156,18 +138,6 @@ export const secondaryMenu = [
     alt: {
       el: `Ποιοί είμαστε - ${companyName}`,
       en: `Your coach - ${companyName}`,
-    },
-  },
-  {
-    name: {
-      el: "Κόστος",
-      en: "Pricing",
-    },
-    href: "/pricing",
-    image: "/gym-background.webp",
-    alt: {
-      el: `Pricing - ${companyName}`,
-      en: `Κόστος - ${companyName}`,
     },
   },
   {
