@@ -5,7 +5,7 @@ import { testimonials } from "@/library/Translations";
 const Testimonials = () => {
   return (
     <div className="flex flex-col gap-4 items-center w-full max-w-[700px] m-auto p-4 animate-fadeIn">
-      <a href="" target="_blank" className="text-white bg-black w-full sticky top-0 flex justify-between p-6 gap-4 border border-gray-900">
+      <a href="https://www.google.com/maps/dir//Superfit+Training+Studio,+Dimitsanas+13,+Ilion+131+22,+Greece/@38.025054,23.629332,11z/data=!4m9!4m8!1m0!1m5!1m1!1s0x14a1a3e381db9437:0x9e35f4460a2b8e44!2m2!1d23.7117334!2d38.0250824!3e0?hl=en&entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="text-white bg-black w-full sticky top-0 flex justify-between p-6 gap-4 border border-gray-900">
         <div className="flex gap-4 items-center">
           <div className="rounded-full bg-red-500 w-10 h-10 flex justify-center items-center text-lg">S</div>
           <div>
@@ -14,7 +14,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="flex gap-2 items-center">
-          <div className="font-semibold text-xl">4.8</div>
+          <div className="font-semibold text-xl">4.9</div>
           <Image src="/icons/star.svg" width={15} height={15} alt="review star" />
           <Image src="/icons/star.svg" width={15} height={15} alt="review star" />
           <Image src="/icons/star.svg" width={15} height={15} alt="review star" />

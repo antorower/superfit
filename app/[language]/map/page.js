@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Map = () => {
   // Your component logic here
-  return <div>content</div>;
+  return <div>map</div>;
 };
 
 export default Map;

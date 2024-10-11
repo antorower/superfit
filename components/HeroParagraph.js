@@ -24,7 +24,7 @@ const HeroParagraph = ({ language }) => {
             </div>
           </a>
         </Enlarger>
-        <CalendlyWidget />
+        <CalendlyWidget language={language} />
       </div>
     </div>
   );
