@@ -60,7 +60,7 @@ export default function Layout({ children, params }) {
   return (
     <html lang={params.language} className={`${mansalva.variable} ${geologica.variable} ${roboto.variable}`}>
       <body className="bg-backgroundDark">
-        <div className="flex flex-col h-svh">
+        <div className="flex flex-col h-svh font-geologica">
           <Image src="/gym-background.webp" fill style={{ objectFit: "cover" }} priority quality={25} alt="" className="opacity-50 filter grayscale fixed inset-0 -z-50" />
           <TopBar language={params.language ?? defaultLanguage} />
           <div className="flex-grow overflow-y-auto">{children}</div>
