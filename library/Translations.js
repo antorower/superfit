@@ -74,23 +74,6 @@ export const primaryMenu = [
   },
   {
     name: {
-      el: "Χάρτης",
-      en: "Map",
-    },
-    alt: {
-      el: `Χάρτης - ${companyName}`,
-      en: `Map - ${companyName}`,
-    },
-    href: "/map",
-    icon: "/icons/map.svg",
-    iconHover: "/icons/map-yellow.svg",
-    size: 32,
-    phone: true,
-    tablet: false,
-    pc: false,
-  },
-  {
-    name: {
       el: "Επικοινωνία",
       en: "Contact",
     },
@@ -106,24 +89,6 @@ export const primaryMenu = [
     phone: false,
     tablet: true,
     pc: true,
-  },
-  {
-    name: {
-      el: "Κλήση",
-      en: "Call",
-    },
-    alt: {
-      el: `Κλήση - ${companyName}`,
-      en: `Call - ${companyName}`,
-    },
-    href: "/call",
-    icon: "/icons/telephone.svg",
-    image: "/.webp",
-    iconHover: "/icons/telephone-yellow.svg",
-    size: 32,
-    phone: true,
-    tablet: false,
-    pc: false,
   },
 ];
 
