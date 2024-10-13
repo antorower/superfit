@@ -2,7 +2,6 @@ import Image from "next/image";
 import PrimaryMenu from "@/components/PrimaryMenu";
 import TopBar from "@/components/TopBar";
 import { languages, defaultLanguage } from "@/library/Translations";
-import ChatBot from "@/components/ChatBot";
 import ParticlesComponent from "@/components/ParticlesComponent";
 
 export async function generateStaticParams() {
@@ -22,8 +21,3 @@ export default function Layout({ children, params }) {
     </div>
   );
 }
-/*
-<div className="fixed right-6 bottom-24 z-10">
-        <ChatBot lang={params.language} />
-      </div>
-      */

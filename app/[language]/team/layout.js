@@ -3,6 +3,32 @@ import Profile from "@/components/Profile";
 import About from "@/components/About";
 import Vision from "@/components/Vision";
 
+export async function generateMetadata({ params }) {
+  const { language } = params;
+
+  const metadata = {
+    el: {
+      title: "Ποιοι Είμαστε | SuperFit Gym",
+      description: "Γνωρίστε τη Γεωργία Αναγνώστου, ιδιοκτήτρια και προπονήτρια στο SuperFit Gym, με εξειδίκευση στο fitness και την ευεξία.",
+    },
+    en: {
+      title: "Your Coach | SuperFit Gym",
+      description: "Meet Georgia Anagnostou, the owner and coach at SuperFit Gym, specializing in fitness and wellness.",
+    },
+  };
+
+  return {
+    title: metadata[language]?.title || metadata.el.title,
+    description: metadata[language]?.description || metadata.el.description,
+    alternates: {
+      languages: {
+        el: "/el",
+        en: "/en",
+      },
+    },
+  };
+}
+
 export default function Layout({ children, params }) {
   return (
     <div className="animate-fadeIn p-8">

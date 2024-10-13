@@ -3,6 +3,32 @@ import Link from "next/link";
 import Map from "@/components/Map";
 import { telephone } from "@/library/Translations";
 
+export async function generateMetadata({ params }) {
+  const { language } = params;
+
+  const metadata = {
+    el: {
+      title: "Επικοινωνία | SuperFit Gym",
+      description: "Επικοινωνήστε μαζί μας για να μάθετε περισσότερα σχετικά με τις υπηρεσίες μας ή να κλείσετε ραντεβού στο SuperFit Gym στο Ίλιον.",
+    },
+    en: {
+      title: "Contact | SuperFit Gym",
+      description: "Get in touch with us to learn more about our services or book an appointment at SuperFit Gym in Ilion.",
+    },
+  };
+
+  return {
+    title: metadata[language]?.title || metadata.el.title,
+    description: metadata[language]?.description || metadata.el.description,
+    alternates: {
+      languages: {
+        el: "/el",
+        en: "/en",
+      },
+    },
+  };
+}
+
 const Contact = ({ params }) => {
   return (
     <div className="w-full grid grid-cols-12 text-white">

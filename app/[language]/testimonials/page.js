@@ -1,6 +1,31 @@
 import Image from "next/image";
-import Link from "next/link";
 import { testimonials } from "@/library/Translations";
+
+export async function generateMetadata({ params }) {
+  const { language } = params;
+
+  const metadata = {
+    el: {
+      title: "Σχόλια Πελατών | SuperFit Gym",
+      description: "Διαβάστε τι λένε οι πελάτες μας για τις υπηρεσίες και τα προγράμματα fitness του SuperFit Gym στο Ίλιον.",
+    },
+    en: {
+      title: "Customer Testimonials | SuperFit Gym",
+      description: "Read what our clients say about the fitness services and programs at SuperFit Gym in Ilion.",
+    },
+  };
+
+  return {
+    title: metadata[language]?.title || metadata.el.title,
+    description: metadata[language]?.description || metadata.el.description,
+    alternates: {
+      languages: {
+        el: "/el",
+        en: "/en",
+      },
+    },
+  };
+}
 
 const Testimonials = () => {
   return (

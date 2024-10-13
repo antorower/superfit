@@ -2,6 +2,32 @@ import Image from "next/image";
 import Link from "next/link";
 import Service from "@/components/Service";
 
+export async function generateMetadata({ params }) {
+  const { language } = params;
+
+  const metadata = {
+    el: {
+      title: "Υπηρεσίες | SuperFit Gym",
+      description: "Ανακαλύψτε τις υπηρεσίες μας: Ελεύθερα Βάρη, Personal Training, Χειροπρακτική, Διατροφή/Λιπομέτρηση, Spinning, και Ομαδική Προπόνηση στο SuperFit Gym στο Ίλιον.",
+    },
+    en: {
+      title: "Services | SuperFit Gym",
+      description: "Discover our services: Free Weights, Personal Training, Chiropractic, Nutrition/Body Fat Measurement, Spinning, and Group Training at SuperFit Gym in Ilion.",
+    },
+  };
+
+  return {
+    title: metadata[language]?.title || metadata.el.title,
+    description: metadata[language]?.description || metadata.el.description,
+    alternates: {
+      languages: {
+        el: "/el",
+        en: "/en",
+      },
+    },
+  };
+}
+
 const Services = ({ params }) => {
   return (
     <div className="animate-fadeIn overflow-y-auto h-full text-white gap-8 grid p-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center m-auto max-w-5xl">
