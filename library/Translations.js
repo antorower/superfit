@@ -86,7 +86,7 @@ export const primaryMenu = [
     image: "/.webp",
     iconHover: "/icons/map-yellow.svg",
     size: 34,
-    phone: false,
+    phone: true,
     tablet: true,
     pc: true,
   },
@@ -416,3 +416,5 @@ export const testimonials = [
     text: "Οτι καλύτερο στο personal training!",
   },
 ];
+
+const test = "";
