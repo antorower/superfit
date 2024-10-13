@@ -8,8 +8,8 @@ export const title = {
   el: "Προπονήτρια",
   en: "Fitness Coach",
 };
-export const email = "placeholder@gmail.com";
-export const telephone = "+309984745214";
+export const email = "anagnostousuperfit@gmail.com";
+export const telephone = "+306974008881";
 
 export const languages = ["el", "en"];
 export const defaultLanguage = "el";
