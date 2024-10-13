@@ -18,7 +18,7 @@ const HeroParagraph = ({ language }) => {
       </blockquote>
       <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-xl">
         <Enlarger>
-          <a href={`tel:${telephone}`} aria-label={firstButton} className="px-6 py-3 border-4 h-full border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
+          <a aria-label={language === "el" ? "Κάλεσέ μας" : "Call us"} href={`tel:${telephone}`} className="px-6 py-3 border-4 h-full border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
             <div>
               <Image src="/icons/call.svg" width={22} height={22} alt="" />
             </div>
