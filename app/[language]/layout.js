@@ -119,7 +119,6 @@ export default function RootLayout({ children, params }) {
     <html lang={language} className={`${mansalva.variable} ${geologica.variable} ${roboto.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preload" as="image" href="/gym-background.webp" />
         <meta charSet="utf-8" />
       </head>
       <body className="bg-backgroundDark">
