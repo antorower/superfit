@@ -28,20 +28,20 @@ const MobileMenuButton = ({ language }) => {
         </div>
 
         <div className="flex flex-col gap-8 text-2xl items-center justify-center">
-          <Image src="/icons/logo.svg" width={60} height={60} alt={`${companyName} logo`} />         
+          <Image src="/icons/logo.svg" width={60} height={60} alt={`${companyName} logo`} />
           <div className="flex flex-col gap-3 text-center">
-          {secondaryMenu.map((item) => (
-            <Link aria-label={item.alt[language]} onClick={() => setIsMenuOpen(false)} href={`/${language}${item.href}`} key={item.name.en} className="hover:text-primary">
-              {item.name[language]}
-            </Link>
-          ))}
+            {secondaryMenu.map((item) => (
+              <Link aria-label={item.alt[language]} onClick={() => setIsMenuOpen(false)} href={`/${language}${item.href}`} key={item.name.en} className="hover:text-primary">
+                {item.name[language]}
+              </Link>
+            ))}
           </div>
           <div className="">
             <ShareButtonsHorizontal />
           </div>
         </div>
 
-        <button onClick={toggleMenu} aria-label="Close menu" className="sticky p-4 flex w-full text-xl font-bold font-geologica justify-center bottom-0 z-50 bg-black border-t border-gray-700">
+        <button onClick={toggleMenu} aria-label="Close menu" className="sticky p-4 flex w-full text-xl font-bold font-roboto justify-center bottom-0 z-50 bg-black border-t border-gray-700">
           <Image src="/icons/close.svg" width={35} height={35} />
         </button>
       </div>

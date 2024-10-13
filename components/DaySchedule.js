@@ -16,7 +16,7 @@ export default function DaySchedule({ day, language }) {
 
   return (
     <div className={`flex flex-col items-center border-primary  ${isCurrentDay ? "animate-bounce" : null} border`}>
-      <div className="bg-primary w-full text-textDark font-geologica font-semibold px-4 py-2 text-center">{day.day[language]}</div>
+      <div className="bg-primary w-full text-textDark font-roboto font-semibold px-4 py-2 text-center">{day.day[language]}</div>
       <div className="flex flex-col gap-2 items-center p-4 text-textLight bg-backgroundDark bg-opacity-50 w-full">
         {day.openHours[language].map((hour, index) => (
           <div key={`${day.day.en}-hours-${index}`}>{hour}</div>

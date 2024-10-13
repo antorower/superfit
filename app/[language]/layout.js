@@ -3,7 +3,7 @@ import PrimaryMenu from "@/components/PrimaryMenu";
 import TopBar from "@/components/TopBar";
 import { languages, defaultLanguage } from "@/library/Translations";
 import ParticlesComponent from "@/components/ParticlesComponent";
-import { Mansalva, Geologica, Roboto } from "next/font/google";
+import { Mansalva, Roboto } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
 
@@ -14,16 +14,11 @@ const mansalva = Mansalva({
   variable: "--font-mansalva",
 });
 
-const geologica = Geologica({
-  subsets: ["latin", "greek"],
-  display: "swap",
-  variable: "--font-geologica",
-});
-
 const roboto = Roboto({
   weight: ["400", "700"],
   subsets: ["latin", "greek"],
   variable: "--font-roboto",
+  display: "swap",
 });
 
 export async function generateStaticParams() {
@@ -116,7 +111,7 @@ export default function RootLayout({ children, params }) {
   const { language } = params;
 
   return (
-    <html lang={language} className={`${mansalva.variable} ${geologica.variable} ${roboto.variable}`}>
+    <html lang={language} className={`${mansalva.variable} ${roboto.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta charSet="utf-8" />
@@ -125,7 +120,7 @@ export default function RootLayout({ children, params }) {
         <noscript>
           <div className="p-4 bg-red-500 text-white text-center">Για την καλύτερη εμπειρία στο Superfit Gym, παρακαλούμε ενεργοποιήστε τη JavaScript στον browser σας.</div>
         </noscript>
-        <div className="grid grid-rows-[auto_1fr_auto] h-dvh font-geologica">
+        <div className="grid grid-rows-[auto_1fr_auto] h-dvh font-roboto">
           <div>
             <TopBar language={language ?? defaultLanguage} />
           </div>

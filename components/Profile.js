@@ -5,7 +5,7 @@ import { profile } from "@/library/Translations";
 
 const Profile = ({ language }) => {
   return (
-    <div className="flex flex-col rounded-lg bg-black border border-gray-800 bg-opacity-90 p-3 font-geologica">
+    <div className="flex flex-col rounded-lg bg-black border border-gray-800 bg-opacity-90 p-3 font-roboto">
       <div className="relative w-full h-[200px]">
         <Image src="/gym-profile.webp" alt="" fill style={{ objectFit: "cover" }} priority className="rounded-t-lg" />
       </div>

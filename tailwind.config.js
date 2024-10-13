@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       fontFamily: {
         mansalva: ["var(--font-mansalva)"],
-        geologica: ["var(--font-geologica)"],
         roboto: ["var(--font-roboto)"],
       },
       colors: {

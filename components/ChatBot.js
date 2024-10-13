@@ -72,7 +72,7 @@ const ChatBot = ({ lang }) => {
               setAlreadyOpended(true);
             }}
           >
-            <div className="text-sm select-none font-geologica">{chatbotData.startingMessage[language]}</div>
+            <div className="text-sm select-none font-roboto">{chatbotData.startingMessage[language]}</div>
           </button>
         </ChatBotTooltip>
       )}

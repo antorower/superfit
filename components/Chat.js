@@ -58,13 +58,13 @@ const Chat = ({ language, setIsExpanded }) => {
         <div className="text-gray-400 text-justify">{answer}</div>
         <div className="flex flex-wrap gap-2">
           {choices.map((choice) => (
-            <button key={choice.id} onClick={() => setResponse(choice.id)} className="bg-primary rounded font-semibold font-geologica text-textDark px-2 py-1">
+            <button key={choice.id} onClick={() => setResponse(choice.id)} className="bg-primary rounded font-semibold font-roboto text-textDark px-2 py-1">
               {choice.text}
             </button>
           ))}
         </div>
       </div>
-      <button key="startover" onClick={() => setResponse(0)} className="bg-primary rounded-b font-semibold font-geologica text-textDark px-2 py-2">
+      <button key="startover" onClick={() => setResponse(0)} className="bg-primary rounded-b font-semibold font-roboto text-textDark px-2 py-2">
         Start Over
       </button>
     </div>
