@@ -6,12 +6,12 @@ export async function generateMetadata({ params }) {
 
   const metadata = {
     el: {
-      title: "Σχόλια Πελατών | SuperFit Gym",
-      description: "Διαβάστε τι λένε οι πελάτες μας για τις υπηρεσίες και τα προγράμματα fitness του SuperFit Gym στο Ίλιον.",
+      title: "Σχόλια Πελατών | Superfit Gym",
+      description: "Διαβάστε τι λένε οι πελάτες μας για τις υπηρεσίες και τα προγράμματα fitness του Superfit Gym στο Ίλιον.",
     },
     en: {
-      title: "Testimonials | SuperFit Gym",
-      description: "Read what our clients say about the fitness services and programs at SuperFit Gym in Ilion.",
+      title: "Testimonials | Superfit Gym",
+      description: "Read what our clients say about the fitness services and programs at Superfit Gym in Ilion.",
     },
   };
 
@@ -40,11 +40,11 @@ const Testimonials = () => {
         </div>
         <div className="flex gap-2 items-center">
           <div className="font-semibold text-xl">4.9</div>
-          <Image src="/icons/star.svg" width={15} height={15} alt="review star" />
-          <Image src="/icons/star.svg" width={15} height={15} alt="review star" />
-          <Image src="/icons/star.svg" width={15} height={15} alt="review star" />
-          <Image src="/icons/star.svg" width={15} height={15} alt="review star" />
-          <Image src="/icons/star.svg" width={15} height={15} alt="review star" />
+          <Image src="/icons/star.svg" width={15} height={15} alt="" />
+          <Image src="/icons/star.svg" width={15} height={15} alt="" />
+          <Image src="/icons/star.svg" width={15} height={15} alt="" />
+          <Image src="/icons/star.svg" width={15} height={15} alt="" />
+          <Image src="/icons/star.svg" width={15} height={15} alt="" />
         </div>
       </a>
       {testimonials.map((review) => (

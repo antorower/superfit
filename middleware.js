@@ -3,8 +3,6 @@ import { languages, defaultLanguage } from "./library/Translations";
 
 export function middleware(request) {
   const pathname = request.nextUrl.pathname;
-  console.log("AAAAAAAAAAAA");
-  console.log(pathname);
   if (pathname === "/manifest.json") return;
 
   // Έλεγχος αν το path ξεκινάει με μια υποστηριζόμενη γλώσσα

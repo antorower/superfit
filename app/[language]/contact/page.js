@@ -8,12 +8,12 @@ export async function generateMetadata({ params }) {
 
   const metadata = {
     el: {
-      title: "Επικοινωνία | SuperFit Gym",
-      description: "Επικοινωνήστε μαζί μας για να μάθετε περισσότερα σχετικά με τις υπηρεσίες μας ή να κλείσετε ραντεβού στο SuperFit Gym στο Ίλιον.",
+      title: "Επικοινωνία | Superfit Gym",
+      description: "Επικοινωνήστε μαζί μας για να μάθετε περισσότερα σχετικά με τις υπηρεσίες μας ή να κλείσετε ραντεβού στο Superfit Gym στο Ίλιον.",
     },
     en: {
-      title: "Contact | SuperFit Gym",
-      description: "Get in touch with us to learn more about our services or book an appointment at SuperFit Gym in Ilion.",
+      title: "Contact | Superfit Gym",
+      description: "Get in touch with us to learn more about our services or book an appointment at Superfit Gym in Ilion.",
     },
   };
 
@@ -38,7 +38,7 @@ const Contact = ({ params }) => {
       <div className="p-8 flex flex-col gap-4 col-span-12 lg:col-span-6 xl:col-span-4">
         <div className="flex gap-4">
           <div className="border border-gray-900 bg-black bg-opacity-70 p-3 rounded-lg">
-            <Image src="/logo.png" width={25} height={25} alt="" />
+            <Image src="/icons/logo.png" width={25} height={25} alt="" />
           </div>
           <div className="border border-gray-900 flex-grow text-center bg-black bg-opacity-70 p-3 rounded-lg font-geologica text-lg font-bold">Superfit Training Studio</div>
         </div>
@@ -61,8 +61,8 @@ const Contact = ({ params }) => {
         </div>
         <div className="h-full border border-gray-900 flex-grow text-justify bg-black bg-opacity-70 px-4 py-2 rounded-lg font-geologica text-gray-300">
           {params.language === "el"
-            ? "Το SuperFit Training Studio είναι ο απόλυτος προορισμός για όσους αναζητούν να πετύχουν τη μέγιστη φυσική κατάσταση και ευεξία. Σε ένα σύγχρονο και καλαίσθητο περιβάλλον, προσφέρουμε εξατομικευμένα προγράμματα προπόνησης, προσωπική καθοδήγηση από ειδικούς προπονητές και ποικιλία ομαδικών μαθημάτων για όλες τις ανάγκες. Στο SuperFit, η βελτίωση της δύναμης, της αντοχής και της ευλυγισίας δεν είναι απλά στόχος, αλλά τρόπος ζωής."
-            : "The SuperFit Training Studio is the ultimate destination for those seeking to achieve peak physical fitness and wellness. In a modern and stylish environment, we offer personalized training programs, expert guidance from professional trainers, and a variety of group classes to suit every need. At SuperFit, improving strength, endurance, and flexibility is not just a goal—it's a way of life."}
+            ? "Το Superfit Training Studio είναι ο απόλυτος προορισμός για όσους αναζητούν να πετύχουν τη μέγιστη φυσική κατάσταση και ευεξία. Σε ένα σύγχρονο και καλαίσθητο περιβάλλον, προσφέρουμε εξατομικευμένα προγράμματα προπόνησης, προσωπική καθοδήγηση από ειδικούς προπονητές και ποικιλία ομαδικών μαθημάτων για όλες τις ανάγκες. Στο Superfit, η βελτίωση της δύναμης, της αντοχής και της ευλυγισίας δεν είναι απλά στόχος, αλλά τρόπος ζωής."
+            : "The Superfit Training Studio is the ultimate destination for those seeking to achieve peak physical fitness and wellness. In a modern and stylish environment, we offer personalized training programs, expert guidance from professional trainers, and a variety of group classes to suit every need. At Superfit, improving strength, endurance, and flexibility is not just a goal—it's a way of life."}
         </div>
       </div>
     </div>

@@ -135,8 +135,8 @@ export const chatbotData = {
   },
   options: {
     el: [
-      { id: 10, text: "Υπηρεσίες", options: [11, 12, 13, 14, 15, 16], answer: "Στην SuperFit, προσφέρουμε μια μεγάλη γκάμα υπηρεσιών που θα καλύψουν κάθε ανάγκη σου για άσκηση και ευεξία. Ρίξε μια ματιά στις επιλογές μας!" },
-      { id: 11, text: "Γυμναστήριο", options: [], answer: "Το SuperFit διαθέτει έναν πλήρως εξοπλισμένο και σύγχρονο χώρο γυμναστικής. Κόστος συμμετοχής: 30€/μήνα. Ελάτε να ζήσετε την εμπειρία μας!" },
+      { id: 10, text: "Υπηρεσίες", options: [11, 12, 13, 14, 15, 16], answer: "Στην Superfit, προσφέρουμε μια μεγάλη γκάμα υπηρεσιών που θα καλύψουν κάθε ανάγκη σου για άσκηση και ευεξία. Ρίξε μια ματιά στις επιλογές μας!" },
+      { id: 11, text: "Γυμναστήριο", options: [], answer: "Το Superfit διαθέτει έναν πλήρως εξοπλισμένο και σύγχρονο χώρο γυμναστικής. Κόστος συμμετοχής: 30€/μήνα. Ελάτε να ζήσετε την εμπειρία μας!" },
       { id: 12, text: "Personal Training", options: [121, 122, 123], answer: "Προσαρμοσμένο στα μέτρα σου, το personal training σου δίνει το κάτι παραπάνω για να πετύχεις τους στόχους σου." },
       { id: 16, text: "Group Training", options: [], answer: "Το Group Training είναι ένας διασκεδαστικός και αποδοτικός τρόπος άσκησης σε μικρές ομάδες, υπό την καθοδήγηση προπονητή. Το κόστος είναι 8€/άτομο για 4 άτομα, 7€/άτομο για 5 άτομα, και 5€/άτομο για ομάδες άνω των 5 ατόμων." },
       { id: 121, text: "Στο Γυμναστήριο", options: [], answer: "Personal training μέσα στο γυμναστήριο μας με τιμή 15€/συνεδρία. Πακέτα: 8 προπονήσεις/μήνα στα 20€. Κάθε 4 επιπλέον προπονήσεις/μήνα κοστίζουν μόνο 5€ παραπάνω." },
@@ -162,11 +162,11 @@ export const chatbotData = {
 
       { id: 90, text: "Προϊόντα", options: [], answer: "Δες τα προϊόντα μας στον παρακάτω σύνδεσμο και ανακάλυψε τα καλύτερα εργαλεία για την προπόνησή σου." },
 
-      { id: 100, text: "Αξιολογήσεις", options: [], answer: "Το SuperFit έχει εκατοντάδες ευχαριστημένους πελάτες. Δες τι λένε για εμάς και έλα να γίνεις κι εσύ μέλος της ομάδας μας!" },
+      { id: 100, text: "Αξιολογήσεις", options: [], answer: "Το Superfit έχει εκατοντάδες ευχαριστημένους πελάτες. Δες τι λένε για εμάς και έλα να γίνεις κι εσύ μέλος της ομάδας μας!" },
     ],
     en: [
-      { id: 10, text: "Services", options: [11, 12, 13, 14, 15, 16], answer: "At SuperFit, we offer a wide range of services tailored to meet all your fitness and wellness needs. Check out our options below!" },
-      { id: 11, text: "Gym", options: [], answer: "SuperFit features a fully equipped, modern gym. Membership costs: €30/month. Come and experience our facility!" },
+      { id: 10, text: "Services", options: [11, 12, 13, 14, 15, 16], answer: "At Superfit, we offer a wide range of services tailored to meet all your fitness and wellness needs. Check out our options below!" },
+      { id: 11, text: "Gym", options: [], answer: "Superfit features a fully equipped, modern gym. Membership costs: €30/month. Come and experience our facility!" },
       { id: 12, text: "Personal Training", options: [121, 122, 123], answer: "Personal training is tailored to you, offering the extra push you need to achieve your goals." },
       { id: 16, text: "Group Training", options: [], answer: "Group Training is a fun and effective way to work out in small groups, guided by a trainer. The cost is €8 per person for 4 people, €7 per person for 5 people, and €5 per person for groups larger than 5." },
       { id: 121, text: "At the Gym", options: [], answer: "We offer personal training at our gym for €15 per session. Packages: 8 sessions/month for €20. Each additional 4 sessions/month costs just €5 extra." },

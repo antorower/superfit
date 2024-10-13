@@ -7,12 +7,12 @@ export async function generateMetadata({ params }) {
 
   const metadata = {
     el: {
-      title: "Υπηρεσίες | SuperFit Gym",
-      description: "Ανακαλύψτε τις υπηρεσίες μας: Ελεύθερα Βάρη, Personal Training, Χειροπρακτική, Διατροφή/Λιπομέτρηση, Spinning, και Ομαδική Προπόνηση στο SuperFit Gym στο Ίλιον.",
+      title: "Υπηρεσίες | Superfit Gym",
+      description: "Ανακαλύψτε τις υπηρεσίες μας: Ελεύθερα Βάρη, Personal Training, Χειροπρακτική, Διατροφή/Λιπομέτρηση, Spinning, και Ομαδική Προπόνηση στο Superfit Gym στο Ίλιον.",
     },
     en: {
-      title: "Services | SuperFit Gym",
-      description: "Discover our services: Free Weights, Personal Training, Chiropractic, Nutrition/Body Fat Measurement, Spinning, and Group Training at SuperFit Gym in Ilion.",
+      title: "Services | Superfit Gym",
+      description: "Discover our services: Free Weights, Personal Training, Chiropractic, Nutrition/Body Fat Measurement, Spinning, and Group Training at Superfit Gym in Ilion.",
     },
   };
 

@@ -44,7 +44,7 @@ export default function CalendlyWidget({ language }) {
       <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
       <div className="flex gap-6">
         <Enlarger>
-          <button onClick={handleClick} className="px-6 py-3 border-4 border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
+          <button onClick={handleClick} className="px-6 py-3 border-4 h-full border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
             <Image src="/icons/calendar-black.svg" width={26} height={26} alt="" />
           </button>
         </Enlarger>

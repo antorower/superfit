@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const ShareButtonsHorizontal = () => {
   const shareUrl = "https://superfitgym.gr";
-  const title = "SuperFit Gym";
+  const title = "Superfit Gym";
 
   // Variants for the animation
   const containerVariants = {
@@ -38,13 +38,13 @@ const ShareButtonsHorizontal = () => {
       {/* TikTok Share (custom button) */}
       <motion.div whileHover={{ scale: 1.1, rotate: "360deg", transition: { duration: 0.3 } }}>
         <a href="https://www.tiktok.com/@be_superfit" target="_blank" rel="noopener noreferrer" aria-label={`Share ${companyName} on TikTok`} className="flex items-center">
-          <Image src="/icons/tik-tok-icon.jpg" width={30} height={30} className="rounded-full" />
+          <Image src="/icons/tik-tok-icon.jpg" width={30} height={30} className="rounded-full" alt="" />
         </a>
       </motion.div>
 
       <motion.div whileHover={{ scale: 1.1, rotate: "360deg", transition: { duration: 0.3 } }}>
         <a href="https://www.instagram.com/superfit_training_studio" target="_blank" rel="noopener noreferrer" aria-label={`Share ${companyName} on TikTok`} className="flex items-center">
-          <Image src="/icons/instagram-icon.png" width={30} height={30} className="rounded-full" />
+          <Image src="/icons/instagram-icon.png" width={30} height={30} className="rounded-full" alt="" />
         </a>
       </motion.div>
     </motion.div>

@@ -47,11 +47,11 @@ const Chat = ({ language, setIsExpanded }) => {
     <div className="bg-backgroundDark h-[350px] w-[250px] rounded-t-lg flex flex-col justify-between shadow-lg shadow-black">
       <div className="bg-primary p-2 rounded-t-lg flex justify-between items-center">
         <div className="rounded-full p-1 border-r">
-          <Image src="/icons/robot-dark.svg" width={20} height={20} alt="robot-icon" />
+          <Image src="/icons/robot-dark.svg" width={20} height={20} alt="" />
         </div>
         <div className="font-bold select-none text-textDark">{chatbotData.name}</div>
         <button onClick={() => setIsExpanded(false)}>
-          <Image src="/icons/close-dark.svg" width={18} height={18} alt="close-icon" />
+          <Image src="/icons/close-dark.svg" width={18} height={18} alt="" />
         </button>
       </div>
       <div className="text-textLight px-4 py-2 flex-grow flex flex-col gap-4 text-sm overflow-y-auto overflow-x-hidden">

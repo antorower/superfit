@@ -7,7 +7,7 @@ const Profile = ({ language }) => {
   return (
     <div className="flex flex-col rounded-lg bg-black border border-gray-800 bg-opacity-90 p-3 font-geologica">
       <div className="relative w-full h-[200px]">
-        <Image src="/gym-profile.webp" fill style={{ objectFit: "cover" }} priority className="rounded-t-lg" />
+        <Image src="/gym-profile.webp" alt="" fill style={{ objectFit: "cover" }} priority className="rounded-t-lg" />
       </div>
       <div className="flex flex-col mt-2">
         <div className="font-medium text-white">{ownerName[language]}</div>
