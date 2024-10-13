@@ -38,7 +38,7 @@ const Contact = ({ params }) => {
       <div className="p-8 flex flex-col gap-4 col-span-12 lg:col-span-6 xl:col-span-4">
         <div className="flex gap-4">
           <div className="border border-gray-900 bg-black bg-opacity-70 p-3 rounded-lg">
-            <Image src="/icon-192x192.png" width={25} height={25} alt="" />
+            <Image src="/logo.png" width={25} height={25} alt="" />
           </div>
           <div className="border border-gray-900 flex-grow text-center bg-black bg-opacity-70 p-3 rounded-lg font-geologica text-lg font-bold">Superfit Training Studio</div>
         </div>
