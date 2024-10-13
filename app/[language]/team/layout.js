@@ -6,7 +6,6 @@ import { ownerName } from "@/library/Translations";
 
 export async function generateMetadata({ params }) {
   const { language } = params;
-  console.log("LANG", language);
   const metadata = {
     el: {
       title: "Ποιοι Είμαστε | Superfit Gym",

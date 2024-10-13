@@ -33,7 +33,7 @@ export default function CalendlyWidget({ language }) {
     if (window.Calendly) {
       // Ανοίγει το popup widget με τις παραμέτρους που έχεις ορίσει
       window.Calendly.initPopupWidget({
-        url: "https://calendly.com/georkera/personal-training?background_color=181818&text_color=ffffff&primary_color=f2f20c",
+        url: "https://calendly.com/georkera/personal-training?background_color=181818&text_color=ffffff&primary_color=f2f20c&hide_gdpr_banner=1'",
       });
     }
   };
@@ -55,3 +55,16 @@ export default function CalendlyWidget({ language }) {
     </>
   );
 }
+
+/*
+<div className="flex gap-6">
+        <Enlarger>
+          <button aria-label={language === "el" ? "Προγραμμάτισε personal training" : "Book personal training"} onClick={handleClick} className="px-6 py-3 border-4 h-full border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
+            <Image src="/icons/calendar-black.svg" width={26} height={26} alt="" />
+          </button>
+        </Enlarger>
+        <button aria-label={language === "el" ? "Προγραμμάτισε personal training" : "Book personal training"} onClick={handleClick} className="hidden  px-6 py-3 border-4 border-primary group bg-primary text-textDark font-bold rounded lg:flex items-center gap-2">
+          {language === "el" ? "Κλείσε Personal Training Τώρα" : "Book Personal Training Now"}
+        </button>
+      </div>
+      */
