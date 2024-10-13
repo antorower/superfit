@@ -3,6 +3,9 @@ import { languages, defaultLanguage } from "./library/Translations";
 
 export function middleware(request) {
   const pathname = request.nextUrl.pathname;
+  console.log("AAAAAAAAAAAA");
+  console.log(pathname);
+  if (pathname === "/manifest.json") return;
 
   // Έλεγχος αν το path ξεκινάει με μια υποστηριζόμενη γλώσσα
   const pathnameHasLanguage = languages.some((lang) => pathname.startsWith(`/${lang}`) || pathname === `/${lang}`);
@@ -31,6 +34,6 @@ export function middleware(request) {
 export const config = {
   matcher: [
     // Εξαίρεση των αρχείων με επέκταση (.ico, .jpg, κλπ.) και των στατικών αρχείων
-    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:jpg|jpeg|gif|png|svg|ico|webp|mp3)$).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|manifest.json|.*\\.(?:jpg|jpeg|gif|png|svg|ico|webp|mp3|json)$).*)",
   ],
 };

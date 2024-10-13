@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
       description: "Διαβάστε τι λένε οι πελάτες μας για τις υπηρεσίες και τα προγράμματα fitness του SuperFit Gym στο Ίλιον.",
     },
     en: {
-      title: "Customer Testimonials | SuperFit Gym",
+      title: "Testimonials | SuperFit Gym",
       description: "Read what our clients say about the fitness services and programs at SuperFit Gym in Ilion.",
     },
   };

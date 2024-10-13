@@ -47,6 +47,8 @@ export async function generateMetadata({ params }) {
   return {
     title: metadata[language]?.title || metadata.el.title,
     description: metadata[language]?.description || metadata.el.description,
+    manifest: "/manifest.json",
+    icons: [{ rel: "apple-touch-icon", sizes: "180x180", url: "/apple-touch-icon.png" }],
     alternates: {
       languages: {
         el: "/el",
@@ -55,6 +57,11 @@ export async function generateMetadata({ params }) {
     },
   };
 }
+
+export const viewport = {
+  themeColor: "#000000",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+};
 
 export default function Layout({ children, params }) {
   return (
