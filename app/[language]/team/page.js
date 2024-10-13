@@ -1,10 +1,3 @@
-import Image from "next/image";
-import { ownerName } from "@/library/Translations";
-import Profile from "@/components/Profile";
-import About from "@/components/About";
-import MenuLink from "@/components/MenuLink";
-import Vision from "@/components/Vision";
-
 const Team = ({ params }) => {
   return (
     <div className="flex flex-col max-w-[550px] xl:max-w-[650px] w-full gap-4 relative">

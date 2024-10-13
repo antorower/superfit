@@ -6,7 +6,7 @@ import { ownerName } from "@/library/Translations";
 
 export async function generateMetadata({ params }) {
   const { language } = params;
-
+  console.log("LANG", language);
   const metadata = {
     el: {
       title: "Ποιοι Είμαστε | Superfit Gym",
@@ -31,6 +31,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function Layout({ children, params }) {
+  const { language } = params;
   return (
     <div className="animate-fadeIn p-8">
       <div className="fixed bottom-0 left-0 w-[350px] h-[70dvh] lg:block z-[-30]">
