@@ -44,13 +44,13 @@ export default function CalendlyWidget({ language }) {
       <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
       <div className="flex gap-6">
         <Enlarger>
-          <a href="#" onClick={handleClick} className="px-6 py-3 border-4 border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
+          <button onClick={handleClick} className="px-6 py-3 border-4 border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
             <Image src="/icons/calendar-black.svg" width={26} height={26} alt="" />
-          </a>
+          </button>
         </Enlarger>
-        <a href="#" onClick={handleClick} className="hidden  px-6 py-3 border-4 border-primary group bg-primary text-textDark font-bold rounded lg:flex items-center gap-2">
+        <button onClick={handleClick} className="hidden  px-6 py-3 border-4 border-primary group bg-primary text-textDark font-bold rounded lg:flex items-center gap-2">
           {language === "el" ? "Κλείσε Personal Training Τώρα" : "Book Personal Training Now"}
-        </a>
+        </button>
       </div>
     </>
   );
