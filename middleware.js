@@ -32,6 +32,6 @@ export function middleware(request) {
 export const config = {
   matcher: [
     // Εξαίρεση των αρχείων με επέκταση (.ico, .jpg, κλπ.) και των στατικών αρχείων
-    "/((?!api|_next/static|_next/image|favicon.ico|manifest.json|sitemap.xml|robots.txt.*\\.(?:jpg|jpeg|gif|png|svg|ico|webp|mp3|json)$).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|manifest.json|sitemap.xml|robots.txt|.*\\.(?:jpg|jpeg|gif|png|svg|ico|webp|mp3|json)$).*)",
   ],
 };
