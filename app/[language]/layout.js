@@ -4,7 +4,6 @@ import TopBar from "@/components/TopBar";
 import { languages, defaultLanguage } from "@/library/Translations";
 import ParticlesComponent from "@/components/ParticlesComponent";
 import { Mansalva, Roboto } from "next/font/google";
-import Script from "next/script";
 import "../globals.css";
 
 const mansalva = Mansalva({
@@ -40,6 +39,7 @@ export async function generateMetadata({ params }) {
   };
 
   const siteUrl = "https://www.superfitgym.gr";
+  const logoUrl = `${siteUrl}/icons/logo.png`;
 
   return {
     metadataBase: new URL(siteUrl),
@@ -67,6 +67,12 @@ export async function generateMetadata({ params }) {
       siteName: "Superfit Gym",
       images: [
         {
+          url: logoUrl,
+          width: 512,
+          height: 512,
+          alt: language === "el" ? "Λογότυπο Superfit Gym" : "Superfit Gym Logo",
+        },
+        {
           url: `${siteUrl}/gym-image.jpg`,
           width: 1200,
           height: 630,
@@ -80,7 +86,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: metadata[language]?.title,
       description: metadata[language]?.description,
-      images: [`${siteUrl}/gym-image-twitter.jpg`],
+      images: [logoUrl, `${siteUrl}/gym-image-twitter.jpg`],
       creator: "@superfitgym",
     },
     robots: {
@@ -97,6 +103,114 @@ export async function generateMetadata({ params }) {
     verification: {
       google: "bJyc8L9T3LmYAJLgJReISuxKWEBqklCs_rDBqMZe4o4",
     },
+    other: {
+      "msapplication-TileImage": logoUrl,
+    },
+    // Add the JSON-LD script here
+    script: [
+      {
+        type: "application/ld+json",
+        id: "schema-script",
+        lang: language,
+        json: {
+          "@context": "https://schema.org",
+          "@type": "GymOrFitnessCenter",
+          name: "Superfit Gym",
+          image: `${siteUrl}/gym-image.jpg`,
+          logo: logoUrl,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Dimitsanas 13",
+            addressLocality: "Ilion",
+            postalCode: "131 22",
+            addressCountry: "GR",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 38.025054,
+            longitude: 23.629332,
+          },
+          url: siteUrl,
+          telephone: "+306974008881",
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+306974008881",
+            contactType: "Customer Service",
+            areaServed: "GR",
+            availableLanguage: ["Greek", "English"],
+          },
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Sunday",
+              opens: "Closed",
+              closes: "Closed",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Monday",
+              opens: "17:30",
+              closes: "22:30",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Tuesday",
+              opens: "09:00",
+              closes: "11:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Tuesday",
+              opens: "17:30",
+              closes: "22:30",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Wednesday",
+              opens: "09:00",
+              closes: "11:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Wednesday",
+              opens: "17:30",
+              closes: "22:30",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Thursday",
+              opens: "09:00",
+              closes: "11:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Thursday",
+              opens: "17:30",
+              closes: "22:30",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Friday",
+              opens: "09:00",
+              closes: "11:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Friday",
+              opens: "17:30",
+              closes: "22:30",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Saturday",
+              opens: "11:00",
+              closes: "13:00",
+            },
+          ],
+          sameAs: ["https://www.facebook.com/superfit.training.studio", "https://www.instagram.com/superfit_training_studio", "https://www.tiktok.com/@be_superfit"],
+        },
+      },
+    ],
   };
 }
 
@@ -133,116 +247,7 @@ export default function RootLayout({ children, params }) {
           </div>
           <Image src="/gym-background.webp" fill style={{ objectFit: "cover" }} priority quality={25} alt="" className="opacity-50 filter grayscale fixed inset-0 -z-50" aria-hidden="true" />
         </div>
-        <Script
-          id="schema-script"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "GymOrFitnessCenter",
-              name: "Superfit Gym",
-              image: "https://www.superfitgym.gr/gym-image.jpg",
-              logo: "https://www.superfitgym.gr/icons/logo.png",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Dimitsanas 13",
-                addressLocality: "Ilion",
-                postalCode: "131 22",
-                addressCountry: "GR",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: 38.025054,
-                longitude: 23.629332,
-              },
-              url: "https://www.superfitgym.gr",
-              telephone: "+306974008881",
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+306974008881",
-                contactType: "Customer Service",
-                areaServed: "GR",
-                availableLanguage: ["Greek", "English"],
-              },
-              openingHoursSpecification: [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Sunday",
-                  opens: "Closed",
-                  closes: "Closed",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Monday",
-                  opens: "17:30",
-                  closes: "22:30",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Tuesday",
-                  opens: "09:00",
-                  closes: "11:00",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Tuesday",
-                  opens: "17:30",
-                  closes: "22:30",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Wednesday",
-                  opens: "09:00",
-                  closes: "11:00",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Wednesday",
-                  opens: "17:30",
-                  closes: "22:30",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Thursday",
-                  opens: "09:00",
-                  closes: "11:00",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Thursday",
-                  opens: "17:30",
-                  closes: "22:30",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Friday",
-                  opens: "09:00",
-                  closes: "11:00",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Friday",
-                  opens: "17:30",
-                  closes: "22:30",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Saturday",
-                  opens: "11:00",
-                  closes: "13:00",
-                },
-              ],
-              sameAs: ["https://www.facebook.com/superfit.training.studio", "https://www.instagram.com/superfit_training_studio", "https://www.tiktok.com/@be_superfit"],
-            }),
-          }}
-          lang={language}
-        />
       </body>
     </html>
   );
 }
-
-/*
-      yandex: "",
-      bing: "",
-      */
