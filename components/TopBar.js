@@ -11,7 +11,9 @@ const TopBar = ({ language }) => {
       <Link href="/">
         <Image src="/icons/logo.png" priority width={35} height={35} alt={`${companyName} logo`} />
       </Link>
-      <SecondaryMenu language={language} />
+      <div className="hidden md:flex">
+        <SecondaryMenu language={language} />
+      </div>
       <LanguageSwitcher />
     </nav>
   );
