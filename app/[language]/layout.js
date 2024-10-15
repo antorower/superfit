@@ -54,11 +54,12 @@ export async function generateMetadata({ params }) {
       apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
     },
     alternates: {
-      canonical: `${siteUrl}/${language}`,
+      canonical: language === "el" ? `${siteUrl}/el` : `${siteUrl}/en`,
       languages: {
         el: `${siteUrl}/el`,
         en: `${siteUrl}/en`,
       },
+      "x-default": `${siteUrl}`,
     },
     openGraph: {
       title: metadata[language]?.title,

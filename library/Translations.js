@@ -117,6 +117,18 @@ export const secondaryMenu = [
       en: `Testimonials - ${companyName}`,
     },
   },
+  {
+    name: {
+      el: "Ωράρια",
+      en: "Working Hours",
+    },
+    href: "/working-hours",
+    image: "/gym-background.webp",
+    alt: {
+      el: `Ωράρια - ${companyName}`,
+      en: `Working Hours - ${companyName}`,
+    },
+  },
 ];
 
 export const chatbotData = {

@@ -32,6 +32,7 @@ const Services = ({ params }) => {
   return (
     <div className="animate-fadeIn overflow-y-auto h-full text-white gap-8 grid p-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center m-auto max-w-5xl">
       <Service
+        price={params.language === "el" ? "30€/μήνα" : "30€/month"}
         language={params.language}
         icon="/icons/weight-gym.svg"
         title={{ el: "Ελεύθερα Βάρη", en: "Free Weights" }}
@@ -42,6 +43,7 @@ const Services = ({ params }) => {
       />
 
       <Service
+        price={params.language === "el" ? "12€ - 20€ ανά συνεδρία" : "12€ - 20€ per session"}
         language={params.language}
         icon="/icons/strong.svg"
         title={{ el: "Personal Training", en: "Personal Training" }}
@@ -52,6 +54,7 @@ const Services = ({ params }) => {
       />
 
       <Service
+        price={params.language === "el" ? "30€/συνεδρία" : "30€/session"}
         language={params.language}
         icon="/icons/doctor-bag.svg"
         title={{ el: "Χειροπρακτική", en: "Chiropractic" }}
@@ -62,6 +65,7 @@ const Services = ({ params }) => {
       />
 
       <Service
+        price={params.language === "el" ? "-" : "-"}
         language={params.language}
         icon="/icons/food.svg"
         title={{ el: "Διατροφή / Λιπομέτρηση", en: "Nutrition / Body Fat" }}
@@ -72,6 +76,7 @@ const Services = ({ params }) => {
       />
 
       <Service
+        price={params.language === "el" ? "7€ / 30 λεπτά" : "7€ / 30 mins"}
         language={params.language}
         icon="/icons/spinning.svg"
         title={{ el: "Spinning", en: "Spinning" }}
@@ -82,6 +87,7 @@ const Services = ({ params }) => {
       />
 
       <Service
+        price={params.language === "el" ? "12€ - 20€ ανά συνεδρία" : "12€ - 20€ per session"}
         language={params.language}
         icon="/icons/group.svg"
         title={{ el: "Ομαδική Προπόνηση", en: "Group Training" }}
