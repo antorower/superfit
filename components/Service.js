@@ -8,10 +8,13 @@ const Service = ({ language, icon, title, description, price }) => {
         <Image src={icon} width={60} height={60} alt="" />
       </div>
       <div className="font-bold font-roboto text-xl text-center">{title[language]}</div>
-      <div className="flex justify-center text-sm text-gray-500">{price}</div>
       <div className="text-center text-sm text-gray-400">{description[language]}</div>
     </div>
   );
 };
 
 export default Service;
+/*
+
+      <div className="flex justify-center text-sm text-gray-500">{price}</div>
+      */
