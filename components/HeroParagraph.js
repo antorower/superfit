@@ -25,13 +25,13 @@ const HeroParagraph = ({ language }) => {
         </Enlarger>
         <div className="flex gap-6">
           <Enlarger>
-            <Link href={`/${language}/booking`} aria-label={language === "el" ? "Προγραμμάτισε personal training" : "Book personal training"} className="px-6 py-3 border-4 h-full border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
+            <a href={`/${language}/bookup`} aria-label={language === "el" ? "Προγραμμάτισε personal training" : "Book personal training"} className="px-6 py-3 border-4 h-full border-primary group bg-primary text-textDark font-bold rounded flex items-center gap-2">
               <Image src="/icons/calendar-black.svg" width={26} height={26} alt="" />
-            </Link>
+            </a>
           </Enlarger>
-          <Link href={`/${language}/booking`} aria-label={language === "el" ? "Προγραμμάτισε personal training" : "Book personal training"} className="hidden  px-6 py-3 border-4 border-primary group bg-primary text-textDark font-bold rounded lg:flex items-center gap-2">
+          <a href={`/${language}/bookup`} aria-label={language === "el" ? "Προγραμμάτισε personal training" : "Book personal training"} className="hidden  px-6 py-3 border-4 border-primary group bg-primary text-textDark font-bold rounded lg:flex items-center gap-2">
             {language === "el" ? "Κλείσε Personal Training Τώρα" : "Book Personal Training Now"}
-          </Link>
+          </a>
         </div>
       </div>
     </div>
